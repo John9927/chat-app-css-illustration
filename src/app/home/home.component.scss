@@ -13,45 +13,119 @@
 
 .violet {
   position: absolute;
-  height: 79vh;
-  width: 350px;
-  background: rgb(233, 66, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(233, 66, 255, 1) 0%,
-    rgba(136, 56, 255, 1) 87%
-  );
+  height: 88vh;
+  width: 440px;
+  background: #e942ff;
+  background: linear-gradient(180deg, #e942ff 0%, #8838ff 87%);
   margin-left: -55px;
-  border-bottom-left-radius: 152px;
-  border-bottom-right-radius: 177px;
+  border-bottom-left-radius: 167px;
+  border-bottom-right-radius: 280px;
+  z-index: 10;
+}
+
+// Title & Desdcription
+.container__label {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 // Smartphone
 .container__smartphone {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
+}
+
+.wrap__smartphone {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: -20px;
 }
 
 .smartphone {
   display: flex;
-  width: 190px;
-  height: 370px;
-  border-radius: 26px;
-  margin-top: 80px;
-  margin-left: 242px;
-  border: 10px solid white;
+  flex-direction: column;
+  width: 238px;
+  height: 490px;
+  border-radius: 30px;
+  margin-left: 323px;
+  border: 11px solid white;
   z-index: 100;
-  background: gray;
+  background: #e9e9e9;
+  bottom: 0;
+  position: absolute;
 }
 
 .border__smartphone {
   display: flex;
   height: 20px;
+  flex-direction: column;
   justify-content: flex-start;
   margin: -1px auto;
-  width: 95px;
+  width: 137px;
   background: white;
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
+  z-index: 10;
+}
+
+.container__header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+}
+
+.container__items {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  margin: 26px auto 10px auto;
+  justify-content: space-between;
+}
+
+.name {
+  width: 144px;
+}
+
+.description__person {
+  font-size: 11px;
+  color: hsl(206, 6%, 79%);
+}
+
+.fa-angle-left,
+.fa-ellipsis-v {
+  color: white;
+}
+
+.logo {
+  background: url('./../../assets/images/avatar.jpg') no-repeat;
+  width: 25px;
+  border-radius: 50%;
+  height: 25px;
+  background-size: cover;
+  border: 2px solid white;
+}
+
+.header__smartphone {
+  display: flex;
+  border-radius: 20px 20px 8px 8px;
+  width: 100%;
+  height: 70px;
+  justify-content: start;
+  background: linear-gradient(90deg,#8838ff 0%,#e942ff 87%);
+  z-index: 1;
+  position: relative;
+
 }
