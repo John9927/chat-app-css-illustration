@@ -50,12 +50,28 @@
   display: flex;
   height: 100vh;
   align-items: center;
-  width: 100%;
+  width: 1405px;
+  margin-top: -70px;
+}
+
+.container__title {
+  position: absolute;
+  z-index: 100;
 }
 
 .title {
-  font-size: 22px;
+  font-size: 45px;
   font-weight: bold;
+}
+
+.container__description {
+  display: flex;
+  margin-top: 210px;
+  width: 420px;
+  line-height: 1.7;
+  z-index: 10;
+  color: gray;
+  font-size: 17px;
 }
 
 // Smartphone
@@ -219,7 +235,7 @@
   display: flex;
   width: 170px;
   height: 35px;
-  background: linear-gradient(90deg, #e942ff  0%,#8838ff 87%);
+  background: linear-gradient(90deg, #e942ff 0%, #8838ff 87%);
   justify-content: space-between;
   align-items: center;
   margin-bottom: 9px;
