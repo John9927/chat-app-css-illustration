@@ -66,7 +66,7 @@
 
 .container__description {
   display: flex;
-  margin-top: 210px;
+  margin-top: 80px;
   width: 420px;
   line-height: 1.7;
   z-index: 10;
@@ -289,4 +289,43 @@ input {
   width: 26px;
   height: 26px;
   margin-right: 6px;
+}
+
+.wrap__label {
+  display: flex;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 500px) {
+  .violet {
+    width: 65%;
+    height: 60vh;
+    border-bottom-left-radius: initial;
+    border-bottom-right-radius: 212px;
+  }
+
+  .shadow {
+    width: 50%;
+    height: 60vh;
+  }
+
+  .wrap__label {
+    width: 90%;
+    margin: 0 auto
+  }
+
+  .container__label {
+    height: initial;
+    width: 100%;
+    margin-top: 40%;
+  }
+
+  .container__smartphone {
+    height: 600px;
+  }
+
+  .smartphone {
+    margin-left: initial;
+    margin: 0 auto;
+  }
 }
