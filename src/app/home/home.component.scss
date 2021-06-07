@@ -1,8 +1,30 @@
+// shadow
+.container__shadow {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+
+.shadow {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  width: 315px;
+  height: 86vh;
+  background: rgb(233, 233, 233);
+  position: absolute;
+  border-top-left-radius: 250px;
+}
+
+// Home
 .container__home {
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: rgb(233, 233, 233);
+  background-color: hsl(270, 20%, 96%);
 }
 
 .container__violet {
@@ -100,17 +122,21 @@
 }
 
 .description__person {
-  font-size: 11px;
+  font-size: 9px;
   color: hsl(206, 6%, 79%);
 }
 
-.fa-angle-left,
+.fa-angle-left {
+  color: white;
+}
+
 .fa-ellipsis-v {
+  zoom: 70%;
   color: white;
 }
 
 .logo {
-  background: url('./../../assets/images/avatar.jpg') no-repeat;
+  background: url("./../../assets/images/avatar.jpg") no-repeat;
   width: 25px;
   border-radius: 50%;
   height: 25px;
@@ -124,8 +150,127 @@
   width: 100%;
   height: 70px;
   justify-content: start;
-  background: linear-gradient(90deg,#8838ff 0%,#e942ff 87%);
+  background: linear-gradient(90deg, #8838ff 0%, #e942ff 87%);
   z-index: 1;
   position: relative;
+}
 
+.container__chat {
+  display: flex;
+  width: 100%;
+}
+
+.chat {
+  display: flex;
+  width: 100%;
+}
+
+.description__chat {
+  padding: 7px;
+  font-size: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  background: hsl(278, 62%, 90%);
+  width: 123px;
+  line-height: 1.2;
+  color: hsl(276, 59%, 40%);
+}
+
+.container__photo {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.photo {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  margin: 0px 10px 8px 0px;
+  border-radius: 8px;
+
+  &:last-child {
+    margin-right: initial;
+  }
+}
+
+.--right {
+  justify-content: flex-end;
+}
+
+.--white {
+  background: white;
+  box-shadow: 2px 4px 10px 1px rgb(0 0 0 / 20%);
+  justify-content: flex-end;
+  display: flex;
+}
+
+.--width {
+  width: 75px;
+}
+
+.container__check {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.container__item {
+  display: flex;
+  width: 170px;
+  height: 35px;
+  background: linear-gradient(90deg, #e942ff  0%,#8838ff 87%);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+  border-radius: 10px 10px 10px 5px;
+}
+
+.check {
+  display: flex;
+  width: 10px;
+  margin-left: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.description__check {
+  font-size: 10px;
+  color: hsl(277, 30%, 76%);
+  width: 90px;
+}
+
+.money {
+  color: white;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container__input {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  align-items: center;
+  margin-top: 3px;
+}
+
+input {
+  border: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.fa-arrow-circle-right {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  margin-right: 6px;
 }
