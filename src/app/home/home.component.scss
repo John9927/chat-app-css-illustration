@@ -47,9 +47,9 @@
 
 // Title & Desdcription
 .container__label {
-   display: flex;
-   height: 100vh;
-   width: 100%;
+  display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
 .container__title {
@@ -99,6 +99,7 @@
   background: #e9e9e9;
   bottom: 0;
   position: absolute;
+  box-shadow: 2px 2px 21px 6px rgb(0 0 0 / 20%);
 }
 
 .border__smartphone {
@@ -299,9 +300,10 @@ input {
   margin-left: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px)
+ {
   .violet {
-    width: 64%;
+    width: 56%;
     height: 60vh;
     border-bottom-left-radius: initial;
     border-bottom-right-radius: 212px;
@@ -348,5 +350,11 @@ input {
 
   .container__description {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .violet {
+    width: 64%;
   }
 }
